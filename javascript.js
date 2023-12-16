@@ -17,6 +17,7 @@ function getRandomColor(){
 function flashColors(){
     var flashes = document.querySelectorAll('.flash');
     flashes.forEach(changeflash());
+    var ark1 = getElementById("title")
     function changeflash(){
         for ( var i=0; i < 9; i++){
             var rcolor = getRandomColor()
@@ -26,4 +27,5 @@ function flashColors(){
     }
 
 }
-setInterval(flashColors, 100)
+var skib = prompt("How fast do you want them to change")
+setInterval(flashColors, skib)
